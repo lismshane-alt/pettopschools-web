@@ -3,29 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Preschool Teacher Training Institute | Sensory-Oriented English in Sri Lanka</title>
-  <meta name="description" content="Master sensory-oriented English teaching techniques in Sri Lanka. Help preschool children grasp English as a lifestyle while building teacher confidence and parent trust.">
+  <title>PETTOP LONDON – INTERNATIONAL NETWORK | Preschool Teacher Training Sri Lanka</title>
+  <meta name="description" content="PETTOP LONDON – International Network. Master sensory-oriented English teaching techniques in Sri Lanka. Build teacher confidence and instant parent trust.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Top Navigation Header with Institute Logo Placeholder -->
+  <!-- 1. Header: Clean, Sticky Top Navigation with Left-Aligned Text Logo Placeholder -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="brand-logo" aria-label="Institute Home">
-        <!-- Placeholder for Institute Logo (Replace with <img src="images/logo.png" alt="Institute Logo"> later) -->
-        <div class="logo-placeholder">LOGO<br>HERE</div>
-        <div class="brand-text">
-          <span class="brand-name">BrightSteps Academy</span>
-          <span class="brand-tagline">Preschool Teacher Training • Sri Lanka</span>
-        </div>
+      <a href="index.html" class="brand-logo" aria-label="PETTOP LONDON Home">
+        <span class="brand-title">PETTOP LONDON</span>
+        <span class="brand-subtitle">International Network • Sri Lanka</span>
       </a>
 
-      <nav class="main-nav" aria-label="Main Navigation">
+      <nav class="main-nav" aria-label="Primary Navigation">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">Methodology</a></li>
-          <li><a href="gallery.html">Gallery &amp; Work</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -33,161 +29,317 @@
   </header>
 
   <main>
-    <!-- Warm Hero Section -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <span class="badge">Sri Lanka's Premier Early Childhood English Program</span>
-          <h1>Master <span>Sensory-Oriented</span> English Teaching Techniques</h1>
-          <p class="hero-lead">
-            Help kids grasp English as a natural <strong>lifestyle</strong>—not just rote memory or classroom practice—preventing future learning boundaries before they ever form.
-          </p>
-          <div class="hero-cta-group">
-            <a href="#join" class="btn btn-primary" data-open-modal>Join Our Next Intake</a>
-            <a href="about.html" class="btn btn-outline">Explore Our Methodology</a>
-          </div>
-          <p class="hero-trust-note">
-            <span class="hero-trust-dot"></span>
-            Designed specifically for Preschool Teachers &amp; Early Childhood Educators across Sri Lanka.
-          </p>
-        </div>
+    <!-- 2. Hero Section: Full-Width Background Video (Autoplay, Muted, Loop) + Dark Matte Overlay -->
+    <section class="hero-fullscreen">
+      <video
+        id="heroBgVideo"
+        class="hero-bg-media"
+        src="videos/trailer.mp4"
+        poster="images/hero-placeholder.jpg"
+        autoplay
+        muted
+        loop
+        playsinline
+      ></video>
+      <div class="hero-overlay" aria-hidden="true"></div>
 
-        <!-- Hero Highlight Card -->
-        <aside class="hero-card" aria-label="Key Program Highlights">
-          <h3>Why Teachers Choose This Program</h3>
-          <ul class="check-list">
-            <li>
-              <span class="check-icon">✓</span>
-              <div><strong>English as a Lifestyle:</strong> Move beyond flashcards and memorization so children experience and live the language daily.</div>
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              <div><strong>Elevate Your Own Confidence:</strong> Speak and teach English naturally and fearlessly in your classroom.</div>
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              <div><strong>Instant Parent Trust:</strong> Gain the complete confidence of parents with structured, explainable teaching methods.</div>
-            </li>
-          </ul>
-        </aside>
-      </div>
-    </section>
-
-    <!-- Core Benefits Section -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <span class="badge">Transform Your Classroom</span>
-          <h2>Empowering Teachers, Inspiring Young Minds</h2>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow eyebrow-accent">PETTOP LONDON – INTERNATIONAL NETWORK</span>
+          <h1>Master Sensory-Oriented English Teaching Techniques</h1>
           <p>
-            Our training program equips Sri Lankan preschool teachers with practical, sensory-rich tools that transform both how you teach and how parents value your preschool.
+            Help children grasp English as a natural lifestyle—not rote memory or classroom practice—preventing future learning boundaries before they ever form.
           </p>
+          <div class="hero-actions">
+            <button type="button" class="btn btn-yellow" data-open-modal>Join Our Next Intake</button>
+            <a href="about.html" class="btn btn-outline-light">Explore the Methodology</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stylish Sound Toggle Overlay ("Unmute Video") -->
+      <div class="hero-sound-wrap container">
+        <button type="button" id="heroSoundToggle" class="sound-toggle-btn" aria-pressed="false" aria-label="Unmute background video">
+          <span class="sound-icon" id="heroSoundIcon" aria-hidden="true">🔇</span>
+          <span class="sound-label" id="heroSoundLabel">Unmute Video</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- 3. Introduction / The Mission: Asymmetrical Split Column on Warm Greige Canvas -->
+    <section class="section-greige">
+      <div class="container mission-split">
+        <!-- Left Side: Powerful Statement on Teacher Confidence & Parent Trust -->
+        <div class="mission-statement">
+          <span class="eyebrow">The Mission</span>
+          <h2>Unshakable Teacher Confidence. Instant Parent Trust.</h2>
+          <p class="mission-lead">
+            When an educator commands a clear, sensory-driven methodology, it transforms how they speak, how children respond, and how parents value their school.
+          </p>
+          <p class="mission-body">
+            Designed for ambitious early childhood professionals across Sri Lanka, the PETTOP LONDON curriculum replaces outdated memorization drills with explainable, sensory-oriented immersion. You will elevate your own spoken assurance in English while giving parents transparent proof of their child's progress.
+          </p>
+
+          <div class="mission-pillars">
+            <div class="pillar-item">
+              <h3>01. Teacher Mastery</h3>
+              <p>Develop effortless classroom fluency and poise through structured sensory delivery frameworks.</p>
+            </div>
+            <div class="pillar-item">
+              <h3>02. Parent Confidence</h3>
+              <p>Articulate the science behind every activity, winning the immediate respect and loyalty of families.</p>
+            </div>
+          </div>
         </div>
 
-        <div class="cards-grid">
-          <article class="card">
-            <div class="card-number">01</div>
-            <h3>Prevent Future Learning Boundaries</h3>
-            <p>
-              When children are taught English as a subject to memorize, they develop hesitation later in school. Our sensory-oriented techniques wire English into their daily habits and curiosity.
+        <!-- Right Side: Single Portrait Image Placeholder -->
+        <div class="mission-portrait-wrap">
+          <img src="images/mission-portrait.jpg" alt="Confident preschool educator leading a sensory English session" class="mission-portrait">
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. New Gallery: The Proof of Progress / Kids’ Assessment (Responsive Multi-Card Slider) -->
+    <section class="section-greige section-greige-bordered">
+      <div class="container">
+        <div class="slider-header">
+          <div>
+            <span class="eyebrow">Kids’ Assessment</span>
+            <h2>The Proof of Progress</h2>
+            <p class="slider-subtext">
+              Structured, stress-free sensory evaluations that demonstrate real spoken comprehension and give parents measurable confidence.
             </p>
+          </div>
+          <div class="slider-controls" aria-label="Assessment slider navigation">
+            <button type="button" class="slider-btn" id="slidePrevBtn" aria-label="Previous assessment card">←</button>
+            <button type="button" class="slider-btn" id="slideNextBtn" aria-label="Next assessment card">→</button>
+          </div>
+        </div>
+
+        <!-- Multi-Card Horizontal Slider -->
+        <div class="assessment-slider" id="assessmentSlider">
+          <!-- Card 1 -->
+          <article class="assessment-card">
+            <div class="assessment-media">
+              <img src="images/assessment-1.jpg" alt="Early Childhood Speech Examination">
+              <span class="assessment-indicator">Stage 01 • Phonetic Readiness</span>
+            </div>
+            <div class="assessment-body">
+              <h3>Early Childhood Speech Examination</h3>
+              <p>Evaluating natural vocal response, auditory recognition, and comfort speaking in full sensory phrases.</p>
+            </div>
           </article>
 
-          <article class="card">
-            <div class="card-number">02</div>
-            <h3>Build Your Own English Confidence</h3>
-            <p>
-              You don't need a linguistics degree to be an extraordinary English educator. We guide you step-by-step so you feel fluent, assured, and joyful leading every session.
-            </p>
+          <!-- Card 2 -->
+          <article class="assessment-card">
+            <div class="assessment-media">
+              <img src="images/assessment-2.jpg" alt="Expressive English Milestones">
+              <span class="assessment-indicator">Stage 02 • Active Expression</span>
+            </div>
+            <div class="assessment-body">
+              <h3>Expressive English Milestones</h3>
+              <p>Measuring how effortlessly children connect tactile objects and real-world actions to spoken English without translation.</p>
+            </div>
           </article>
 
-          <article class="card">
-            <div class="card-number">03</div>
-            <h3>Win Instant Parent Trust</h3>
-            <p>
-              Parents want to know <em>how</em> their child is learning. Our clear, explainable methods let you proudly demonstrate your child-centered approach at every parent meeting.
-            </p>
+          <!-- Card 3 -->
+          <article class="assessment-card">
+            <div class="assessment-media">
+              <img src="images/assessment-3.jpg" alt="Sensory Comprehension & Listening Assessment">
+              <span class="assessment-indicator">Stage 03 • Sensory Comprehension</span>
+            </div>
+            <div class="assessment-body">
+              <h3>Sensory Comprehension &amp; Listening</h3>
+              <p>Observing spontaneous movement, spatial cues, and joyful peer interaction during guided English storytelling.</p>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="assessment-card">
+            <div class="assessment-media">
+              <img src="images/assessment-4.jpg" alt="Parent-Verified Fluency Portfolio">
+              <span class="assessment-indicator">Stage 04 • Parent Verification</span>
+            </div>
+            <div class="assessment-body">
+              <h3>Parent-Verified Fluency Portfolio</h3>
+              <p>Transparent assessment indicators that allow teachers to clearly showcase every child's growth to parents.</p>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Lifestyle vs Memory Comparison Section -->
-    <section class="section section-alt">
+    <!-- 5. Visual Showcase: 4-Card Masonry on Stark Matte Black -->
+    <section class="section-black">
       <div class="container">
-        <div class="section-header">
-          <span class="badge">The Sensory Difference</span>
-          <h2>Why "English as a Lifestyle" Works</h2>
-          <p>See how sensory-oriented training shifts preschoolers from passive repetition to active, lifelong fluency.</p>
-        </div>
-
-        <div class="comparison-grid">
-          <div class="comparison-box">
-            <h3>✕ Traditional Rote Practice</h3>
-            <p>Children repeat words from charts without emotional or sensory connection.</p>
-            <ul class="check-list">
-              <li><span>•</span> Relies heavily on short-term memory and drills.</li>
-              <li><span>•</span> Creates fear of making mistakes when speaking.</li>
-              <li><span>•</span> Difficult for teachers to prove real comprehension to parents.</li>
-            </ul>
+        <div class="showcase-header">
+          <div>
+            <span class="eyebrow eyebrow-accent">Visual Showcase</span>
+            <h2>The Method in Motion</h2>
           </div>
-
-          <div class="comparison-box highlight">
-            <h3>✓ Our Sensory-Oriented Lifestyle Approach</h3>
-            <p>Children see, hear, touch, move, and feel English through purposeful everyday routines.</p>
-            <ul class="check-list">
-              <li><span class="check-icon">✓</span> Connects English to real-world senses and playful action.</li>
-              <li><span class="check-icon">✓</span> Removes future learning barriers by making English effortless.</li>
-              <li><span class="check-icon">✓</span> Gives teachers an explainable system parents immediately admire.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Bottom Call To Action Banner -->
-    <section class="section">
-      <div class="container">
-        <div class="cta-banner">
-          <span class="badge">Limited Seats Per Intake</span>
-          <h2>Ready to Become a Confident, Sensory-Oriented Educator?</h2>
           <p>
-            Reserve your spot in our upcoming Sri Lanka intake. Register your details today and our training coordinator will reach out via WhatsApp.
+            Inside our Sri Lanka training cohorts and partner classrooms—where sensory-oriented English becomes a daily lifestyle.
           </p>
-          <button type="button" class="btn btn-primary" data-open-modal>Join Our Next Intake</button>
+        </div>
+
+        <div class="masonry-showcase">
+          <!-- Centerpiece: Large Landscape Video Placeholder for Main Trailer -->
+          <article class="showcase-item showcase-item--featured">
+            <div class="showcase-media">
+              <video src="videos/trailer.mp4" controls preload="metadata"></video>
+            </div>
+            <div class="showcase-meta">
+              <span>Official Program Trailer</span>
+              <h3>PETTOP LONDON: Sensory-Oriented English in Sri Lankan Classrooms</h3>
+            </div>
+          </article>
+
+          <!-- Surrounding Placeholder 1 (Portrait/Side Image) -->
+          <article class="showcase-item showcase-item--side">
+            <div class="showcase-media">
+              <img src="images/placeholder.jpg" alt="Educator guiding tactile English learning">
+            </div>
+            <div class="showcase-meta">
+              <span>Classroom Immersion</span>
+              <h3>Tactile &amp; Spatial Association</h3>
+            </div>
+          </article>
+
+          <!-- Surrounding Placeholder 2 (Bottom Left Video/Image) -->
+          <article class="showcase-item showcase-item--bottom-left">
+            <div class="showcase-media">
+              <video src="videos/clip1.mp4" controls preload="metadata"></video>
+            </div>
+            <div class="showcase-meta">
+              <span>Cohort Training</span>
+              <h3>Vocal Rhythm &amp; Teacher Confidence Lab</h3>
+            </div>
+          </article>
+
+          <!-- Surrounding Placeholder 3 (Bottom Right Image) -->
+          <article class="showcase-item showcase-item--bottom-right">
+            <div class="showcase-media">
+              <img src="images/placeholder.jpg" alt="Parent-teacher methodology demonstration">
+            </div>
+            <div class="showcase-meta">
+              <span>Parent Engagement</span>
+              <h3>Explainable Progress Frameworks</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. New Gallery: Teacher Training In Action / Empowering Educators Across Sri Lanka -->
+    <section class="section-greige">
+      <div class="container">
+        <div class="training-header">
+          <span class="eyebrow">Empowering Educators Across Sri Lanka</span>
+          <h2>Teacher Training In Action</h2>
+          <p>
+            Hands-on workshops, collaborative cohorts, and practical sensory curriculum development designed to elevate preschool educators.
+          </p>
+        </div>
+
+        <div class="training-grid">
+          <!-- Training Card 1 -->
+          <article class="training-card">
+            <div class="training-media">
+              <img src="images/training-1.jpg" alt="Interactive Workshops for Preschool Educators">
+            </div>
+            <div class="training-caption">
+              <span class="training-tag">Session 01</span>
+              <h3>Interactive Workshops</h3>
+              <p>Immersion labs where teachers practice vocal modulation, gesture cues, and confidence-building delivery.</p>
+            </div>
+          </article>
+
+          <!-- Training Card 2 -->
+          <article class="training-card">
+            <div class="training-media">
+              <img src="images/training-2.jpg" alt="PETTOP LONDON Colombo Cohort">
+            </div>
+            <div class="training-caption">
+              <span class="training-tag">Session 02</span>
+              <h3>Colombo Cohort</h3>
+              <p>Bringing together passionate preschool educators and school leaders from across Sri Lanka.</p>
+            </div>
+          </article>
+
+          <!-- Training Card 3 -->
+          <article class="training-card">
+            <div class="training-media">
+              <img src="images/training-3.jpg" alt="Practical Activity Development">
+            </div>
+            <div class="training-caption">
+              <span class="training-tag">Session 03</span>
+              <h3>Practical Activity Development</h3>
+              <p>Designing tactile, everyday lifestyle routines that eliminate future learning boundaries for children.</p>
+            </div>
+          </article>
+
+          <!-- Training Card 4 -->
+          <article class="training-card">
+            <div class="training-media">
+              <img src="images/training-4.jpg" alt="Parent Communication & Certification">
+            </div>
+            <div class="training-caption">
+              <span class="training-tag">Session 04</span>
+              <h3>Parent Trust &amp; Certification</h3>
+              <p>Mastering explainable assessment methods that earn immediate parent confidence and school prestige.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Contained Yellow CTA Block (Triggers Lead-Capture Pop-Up) -->
+    <section class="cta-contained-section">
+      <div class="container">
+        <div class="cta-yellow-block">
+          <div class="cta-yellow-copy">
+            <span class="eyebrow">Next Sri Lanka Cohort</span>
+            <h2>Ready to Transform Your Classroom?</h2>
+            <p>
+              Step into the PETTOP LONDON International Network. Master sensory-oriented English teaching and earn lasting parent trust.
+            </p>
+          </div>
+          <div>
+            <button type="button" class="btn btn-dark" data-open-modal>Join Our Next Intake</button>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Minimalist Matte Black Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>
-        <strong style="color: #FFFFFF;">BrightSteps Preschool Teacher Training Institute</strong>
-        <p class="footer-copy">Empowering preschool teachers across Sri Lanka with sensory-oriented English methodology.</p>
+        <span class="footer-brand">PETTOP LONDON – INTERNATIONAL NETWORK</span>
+        <p class="footer-copy">Sensory-Oriented Early Childhood English Teacher Training • Sri Lanka</p>
       </div>
       <nav class="footer-links" aria-label="Footer Navigation">
         <a href="index.html">Home</a>
         <a href="about.html">Methodology</a>
-        <a href="gallery.html">Gallery &amp; Work</a>
+        <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
   </footer>
 
   <!-- ========================================================================
-       CRITICAL: Lead-Capture Pop-Up Modal (Triggers automatically after 3 seconds)
+       CRITICAL: Lead-Capture Pop-Up Modal (#LeadModal - Deferred 12 Seconds)
        ======================================================================== -->
-  <div id="leadModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+  <div id="LeadModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
     <div class="modal-box">
       <!-- Clear "X" Close Button -->
       <button type="button" id="closeModalBtn" class="modal-close" aria-label="Close registration pop-up">✕</button>
 
       <div class="modal-header">
-        <span class="badge">Next Intake Open</span>
+        <span class="eyebrow">PETTOP LONDON • Sri Lanka Intake</span>
         <h2 id="modalTitle">Join Our Next Intake</h2>
-        <p>Master sensory-oriented English teaching and win instant parent trust. Enter your details below to receive the program brochure on WhatsApp.</p>
+        <p>Enter your details below to receive the program prospectus and upcoming intake schedule via WhatsApp.</p>
       </div>
 
       <!-- Formspree Lead-Capture Form -->
@@ -207,13 +359,13 @@
           <input type="text" id="preschoolName" name="preschool_name" class="form-control" placeholder="e.g., Little Sunbeams Preschool" required>
         </div>
 
-        <button type="submit" class="btn btn-primary btn-block">Join Our Next Intake</button>
-        <p class="form-footnote">We respect your privacy. Our team will contact you via WhatsApp with intake dates and details.</p>
+        <button type="submit" class="btn btn-yellow btn-block">Join Our Next Intake</button>
+        <p class="form-footnote">Our admissions team will reach out via WhatsApp with cohort dates and details.</p>
       </form>
     </div>
   </div>
 
-  <!-- Vanilla JavaScript for the 3-second Pop-Up Modal -->
+  <!-- Vanilla JavaScript for Video Unmute, Slider & 12-Second Deferred Pop-Up Modal -->
   <script src="script.js"></script>
 </body>
 </html>

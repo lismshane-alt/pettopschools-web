@@ -1,14 +1,68 @@
 /* ==========================================================================
-   Preschool Teacher Training Institute - Pop-Up Modal Logic (script.js)
-   Vanilla JavaScript (ONLY for the lead-capture pop-up modal)
+   PETTOP LONDON – INTERNATIONAL NETWORK
+   Vanilla JavaScript (script.js)
+   1. Hero Background Video Unmute/Mute Toggle
+   2. Kids' Assessment Slider Controls
+   3. Deferred 12-Second Lead-Capture Modal (#LeadModal)
    ========================================================================== */
 
 document.addEventListener("DOMContentLoaded", function () {
-  var modal = document.getElementById("leadModal");
+  /* ------------------------------------------------------------------------
+     1. Hero Background Video Sound Toggle ("Unmute Video")
+     ------------------------------------------------------------------------ */
+  var heroVideo = document.getElementById("heroBgVideo");
+  var soundToggleBtn = document.getElementById("heroSoundToggle");
+  var soundIcon = document.getElementById("heroSoundIcon");
+  var soundLabel = document.getElementById("heroSoundLabel");
+
+  if (heroVideo && soundToggleBtn) {
+    soundToggleBtn.addEventListener("click", function () {
+      if (heroVideo.muted) {
+        heroVideo.muted = false;
+        heroVideo.play().catch(function () {});
+        soundToggleBtn.classList.add("is-unmuted");
+        soundToggleBtn.setAttribute("aria-pressed", "true");
+        if (soundIcon) soundIcon.textContent = "🔊";
+        if (soundLabel) soundLabel.textContent = "Mute Video";
+      } else {
+        heroVideo.muted = true;
+        soundToggleBtn.classList.remove("is-unmuted");
+        soundToggleBtn.setAttribute("aria-pressed", "false");
+        if (soundIcon) soundIcon.textContent = "🔇";
+        if (soundLabel) soundLabel.textContent = "Unmute Video";
+      }
+    });
+  }
+
+  /* ------------------------------------------------------------------------
+     2. The Proof of Progress — Kids' Assessment Slider Navigation
+     ------------------------------------------------------------------------ */
+  var slider = document.getElementById("assessmentSlider");
+  var prevBtn = document.getElementById("slidePrevBtn");
+  var nextBtn = document.getElementById("slideNextBtn");
+
+  if (slider && prevBtn && nextBtn) {
+    var getScrollStep = function () {
+      var firstCard = slider.querySelector(".assessment-card");
+      return firstCard ? firstCard.offsetWidth + 24 : 340;
+    };
+
+    prevBtn.addEventListener("click", function () {
+      slider.scrollBy({ left: -getScrollStep(), behavior: "smooth" });
+    });
+
+    nextBtn.addEventListener("click", function () {
+      slider.scrollBy({ left: getScrollStep(), behavior: "smooth" });
+    });
+  }
+
+  /* ------------------------------------------------------------------------
+     3. Lead-Capture Pop-Up Modal (#LeadModal) — Deferred to 12 Seconds
+     ------------------------------------------------------------------------ */
+  var modal = document.getElementById("LeadModal") || document.getElementById("leadModal");
   var closeBtn = document.getElementById("closeModalBtn");
   var openBtns = document.querySelectorAll("[data-open-modal]");
 
-  // Only run modal logic if the modal exists on the current page (index.html)
   if (!modal) return;
 
   function openModal() {
@@ -21,12 +75,12 @@ document.addEventListener("DOMContentLoaded", function () {
     modal.setAttribute("aria-hidden", "true");
   }
 
-  // Automatically trigger the pop-up 3 seconds (3000ms) after entering index.html
+  // Defer automatic pop-up to 12 seconds (12000ms) so visitors experience the hero video first
   var autoPopupTimer = setTimeout(function () {
     openModal();
-  }, 3000);
+  }, 12000);
 
-  // Also allow "Join Our Next Intake" buttons to open the modal immediately
+  // Immediately open modal if user clicks any "Join Our Next Intake" button
   openBtns.forEach(function (btn) {
     btn.addEventListener("click", function (event) {
       event.preventDefault();
