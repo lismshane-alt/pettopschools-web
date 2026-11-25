@@ -1,0 +1,15 @@
+{
+  "name": "pettop-london-website",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.cjs",
+    "build": "node build.cjs",
+    "preview:production": "node server.cjs --production"
+  },
+  "devDependencies": {
+    "heic-convert": "^2.1.0",
+    "playwright": "^1.65.0",
+    "sharp": "^0.35.5"
+  }
+}

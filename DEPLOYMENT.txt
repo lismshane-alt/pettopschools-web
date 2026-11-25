@@ -1,0 +1,30 @@
+PETTOP LONDON - Vercel deployment
+
+Deploy this project folder (the one containing vercel.json), not its parent folder.
+Vercel settings are declared in vercel.json:
+  Framework: Other
+  Build command: node build.cjs
+  Output directory: dist
+  Install command: skipped (production build uses only Node.js built-ins)
+
+The generated dist folder contains the public website only. Original JPG/HEIC
+photos, development dependencies and preview artifacts are excluded.
+
+Domain: https://www.pettopschools.lk
+Add pettopschools.lk and www.pettopschools.lk to the Vercel project, use www as
+the primary domain, and follow Vercel's DNS instructions for your registrar.
+The domain can be changed in site.config.json or overridden with SITE_URL.
+Production builds are indexable; Vercel preview builds are marked noindex.
+
+Registration: both forms prepare an inquiry to WhatsApp +94 77 123 4567.
+The visitor reviews the message and presses Send in WhatsApp. This does not
+silently submit a form or store inquiries in the website. No Formspree account
+is required.
+
+Local source preview: npm start (http://localhost:4173)
+Local production check: npm run build, then npm run preview:production
+(http://localhost:4174).
+
+After deployment: check all four pages, a form handoff, images, video and map.
+Add the domain to Google Search Console, verify ownership, and submit
+https://www.pettopschools.lk/sitemap.xml. Search ranking is not guaranteed.
